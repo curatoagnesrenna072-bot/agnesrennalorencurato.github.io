@@ -57,13 +57,13 @@
           <article class="card">
             <img src="images/profile-1.jpg" alt="Project One preview">
             <h3>Project One</h3>
-            <p>Daily Savings Tracker (C Program) A console-based C program built for IT112: Computer Programming 1 that uses a for loop to collect a student's savings for each of 7 days, calculates the total and daily average, then applies an if-else check against a PHP 500 weekly goal — showing the shortfall if the goal isn't met.
+            <p>Daily Savings Tracker (C Program): A console-based C program built for IT112: Computer Programming 1 that uses a for loop to collect a student's savings for each of 7 days, calculates the total and daily average, then applies an if-else check against a PHP 500 weekly goal — showing the shortfall if the goal isn't met.</p>
             <a href="#" aria-label="Open Project One">View project</a>
           </article>
 
           <article class="card">
             <h3>Project Two</h3>
-            <p>Birthday Card a single-page site built for a friend's 18th birthday, with a cake/wish intro, an interactive envelope letter, an 18-photo gallery, and background music.</p>
+            <p>Birthday Card: a single-page site built for a friend's 18th birthday, with a cake/wish intro, an interactive envelope letter, an 18-photo gallery, and background music.</p>
             <a href="#" aria-label="Open Project Two">View project</a>
           </article>
         </div>
@@ -78,9 +78,14 @@
   </main>
 
   <footer>
-    <p>© <span id="2026"></span> Agnes Renna Loren D. Curato. Built with HTML and CSS.</p>
+    <p>© <span id="year"></span> Agnes Renna Loren D. Curato. Built with HTML and CSS.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const year = document.getElementById('year');
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  </script>
 </body>
 </html>
